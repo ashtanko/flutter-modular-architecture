@@ -1,0 +1,44 @@
+{
+  "appTitle": "flutter_bloc_app_template",
+  "@appTitle": {
+    "description": "Der Titel der Anwendung"
+  },
+  "itemsTitle": "Musterartikel",
+  "@itemsTitle": {
+    "description": "Der Titel der Musterstücke"
+  },
+  "messagesTitle": "Nachrichten",
+  "@messagesTitle": {
+    "description": "Der Titel des Nachrichtenbildschirms"
+  },
+  "itemTitle": "Beispielartikel {id}",
+  "@itemTitle": {
+    "description": "Der Titel des Artikels"
+  },
+  "settingsTitle": "Einstellungen",
+  "@settingsTitle": {
+    "description": "Der Titel der Einstellungen"
+  },
+  "themeTitle": "Thema",
+  "@themeTitle": {},
+  "systemThemeTitle": "System-Thema",
+  "@systemThemeTitle": {},
+  "lightThemeTitle": "Licht-Thema",
+  "@lightThemeTitle": {},
+  "darkThemeTitle": "Dunkles Thema",
+  "@darkThemeTitle": {},
+  "yellowThemeTitle": "Gelbes Thema",
+  "@yellowThemeTitle": {},
+  "itemDetailsTitle": "Artikel Details",
+  "@itemDetailsTitle": {
+    "description": "Der Titel des Bildschirms Artikeldetails"
+  },
+  "error": "Fehler",
+  "@error": {},
+  "emptyList": "Leere Liste",
+  "@emptyList": {},
+  "tabHome": "Home",
+  "@tabHome": {},
+  "tabSettings": "Settings",
+  "@tabSettings": {}
+}
