@@ -17,7 +17,7 @@ long application lifecycle management.
 [![GitHub stars][stars-badge]][stars-link]
 
 ## How to use 🐾
-Just click on [![Use this template](https://img.shields.io/badge/-Use%20this%20template-brightgreen)](https://github.com/ashtanko/flutter_bloc_app_template/generate) button to create a new repo starting from this template.
+Just click on [![Use this template](https://img.shields.io/badge/-Use%20this%20template-brightgreen)](https://github.com/ashtanko/flutter-modular-architecture/generate) button to create a new repo starting from this template.
 
 ## Features 🦄
 - Theme support
@@ -100,17 +100,17 @@ Please note that the generated template is offering to start with a MIT license 
 
 [lint-style-badge]: https://img.shields.io/badge/style-lint-4BC0F5.svg
 [lint-style-link]: https://pub.dev/packages/lint
-[codecov-badge]: https://codecov.io/gh/ashtanko/flutter_bloc_app_template/branch/main/graph/badge.svg?token=T68Rqwj7Ll
-[codecov-link]: https://codecov.io/gh/ashtanko/flutter_bloc_app_template
-[ci-badge]: https://github.com/ashtanko/flutter_bloc_app_template/actions/workflows/ci.yml/badge.svg
-[ci-link]: https://github.com/ashtanko/flutter_bloc_app_template/actions/workflows/ci.yml
-[codefactor-badge]: https://www.codefactor.io/repository/github/ashtanko/flutter_bloc_app_template/badge
-[codefactor-link]: https://www.codefactor.io/repository/github/ashtanko/flutter_bloc_app_template
+[codecov-badge]: https://codecov.io/gh/ashtanko/flutter-modular-architecture/branch/main/graph/badge.svg?token=T68Rqwj7Ll
+[codecov-link]: https://codecov.io/gh/ashtanko/flutter-modular-architecture
+[ci-badge]: https://github.com/ashtanko/flutter-modular-architecture/actions/workflows/ci.yml/badge.svg
+[ci-link]: https://github.com/ashtanko/flutter-modular-architecture/actions/workflows/ci.yml
+[codefactor-badge]: https://www.codefactor.io/repository/github/ashtanko/flutter-modular-architecture/badge
+[codefactor-link]: https://www.codefactor.io/repository/github/ashtanko/flutter-modular-architecture
 [license-badge]: https://img.shields.io/github/license/dart-code-checker/dart-code-metrics
 [license-link]: https://github.com/dart-code-checker/dart-code-metrics/blob/master/LICENSE
 [style-badge]: https://img.shields.io/badge/style-effective_dart-40c4ff.svg
 [style-link]: https://pub.dev/packages/effective_dart
-[forks-badge]: https://img.shields.io/github/forks/ashtanko/flutter_bloc_app_template
-[forks-link]: https://github.com/ashtanko/flutter_bloc_app_template/network
-[stars-badge]: https://img.shields.io/github/stars/ashtanko/flutter_bloc_app_template
-[stars-link]: https://github.com/ashtanko/flutter_bloc_app_template/stargazers
+[forks-badge]: https://img.shields.io/github/forks/ashtanko/flutter-modular-architecture
+[forks-link]: https://github.com/ashtanko/flutter-modular-architecture/network
+[stars-badge]: https://img.shields.io/github/stars/ashtanko/flutter-modular-architecture
+[stars-link]: https://github.com/ashtanko/flutter-modular-architecture/stargazers
