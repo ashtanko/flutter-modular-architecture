@@ -16,12 +16,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '2.x'
+          flutter-version: '3.x'
           channel: stable
 
       - name: Flutter version
@@ -50,10 +50,16 @@ jobs:
         run: fluttergen -c pubspec.yaml
 
       - name: Run analyzer
+        run: cd core && flutter analyze
+
+      - name: Run analyzer(core module)
         run: flutter analyze
 
       - name: Run Dart code metrics
         run: flutter pub run dart_code_metrics:metrics analyze lib
+
+      - name: Run Dart code metrics (core module)
+        run: cd core && flutter pub run dart_code_metrics:metrics analyze lib
 
       - name: Run tests
         run: flutter test --coverage
@@ -68,7 +74,7 @@ jobs:
         uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
         with:
           path: coverage/lcov.info
-          min_coverage: 75
+          min_coverage: 55
           exclude: '**/*.g.dart **/*.gen.dart **/lib/di/ lib/generated/ **/lib/generated/ lib/di/*.dart **/lib/constants/ lib/constants/*.dart/'
 
       - name: Upload coverage to codecov
