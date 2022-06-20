@@ -50,10 +50,10 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `flutter_bloc_app_template`
+  /// `flutter_modular_architecture`
   String get appTitle {
     return Intl.message(
-      'flutter_bloc_app_template',
+      'flutter_modular_architecture',
       name: 'appTitle',
       desc: 'The title of the application',
       args: [],

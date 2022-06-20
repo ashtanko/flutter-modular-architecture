@@ -1,4 +1,4 @@
-import 'package:flutter_bloc_app_template/models/email.dart';
+import 'package:flutter_modular_architecture/models/email.dart';
 import 'package:injectable/injectable.dart';
 
 const _delay = Duration(milliseconds: 1000);

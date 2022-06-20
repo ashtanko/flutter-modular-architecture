@@ -1,5 +1,5 @@
-name: flutter_bloc_app_template
-description: The project of the empty template with Flutter has built the basic framework to realize the functions of internationalization, theme peeling etc.
+name: flutter_modular_architecture
+description: Flutter Beyond Mono Module.
 
 publish_to: 'none'
 
@@ -29,6 +29,8 @@ dependencies:
   flutter_svg: ^1.0.3
   gap: ^2.0.0
   go_router: ^3.0.1
+  core:
+    path: core
 
   flutter_localizations:
     sdk: flutter

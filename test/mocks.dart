@@ -1,5 +1,5 @@
-import 'package:flutter_bloc_app_template/index.dart';
-import 'package:flutter_bloc_app_template/repository/email_list_repository.dart';
+import 'package:flutter_modular_architecture/index.dart';
+import 'package:flutter_modular_architecture/repository/email_list_repository.dart';
 import 'package:mockito/annotations.dart';
 
 export 'mocks.mocks.dart';

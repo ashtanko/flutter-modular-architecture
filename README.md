@@ -1,7 +1,11 @@
-# flutter-bloc-app-template 🤖
-The project of the empty template with Flutter has built the basic framework to realize the functions of internationalization, theme peeling etc.
+# Flutter Beyond Mono Module 🤖
 
-This template is focused on delivering a project with **static analysis** and **continuous integration** already in place.
+Flutter Architecture Beyond Mono Module is a sample project that presents modern approach to [Flutter](https://flutter.dev/) application development using [Dart](https://dart.dev/) and latest tech-stack.
+
+The goal of the project is to demonstrate best practices, provide a set of guidelines, and present modern Flutter
+application architecture that is modular, scalable, maintainable and testable. This application may look simple, but it
+has all of these small details that will set the rock-solid foundation of the larger app suitable for bigger teams and
+long application lifecycle management.
 
 [![style: lint][lint-style-badge]][lint-style-link]
 [![codecov][codecov-badge]][codecov-link]

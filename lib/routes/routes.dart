@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_app_template/index.dart';
+import 'package:flutter_modular_architecture/index.dart';
 import 'package:go_router/go_router.dart';
 
 import '../widgets/root_layout.dart';

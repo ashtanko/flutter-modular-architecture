@@ -1,4 +1,4 @@
-import 'package:flutter_bloc_app_template/index.dart';
+import 'package:flutter_modular_architecture/index.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 

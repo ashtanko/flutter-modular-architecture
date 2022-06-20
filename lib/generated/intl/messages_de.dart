@@ -24,8 +24,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "appTitle":
-            MessageLookupByLibrary.simpleMessage("flutter_bloc_app_template"),
+        "appTitle": MessageLookupByLibrary.simpleMessage(
+            "flutter_modular_architecture"),
         "darkThemeTitle": MessageLookupByLibrary.simpleMessage("Dunkles Thema"),
         "emptyList": MessageLookupByLibrary.simpleMessage("Leere Liste"),
         "error": MessageLookupByLibrary.simpleMessage("Fehler"),

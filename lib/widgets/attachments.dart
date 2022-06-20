@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_app_template/generated/colors.gen.dart';
-import 'package:flutter_bloc_app_template/index.dart';
+import 'package:flutter_modular_architecture/generated/colors.gen.dart';
+import 'package:flutter_modular_architecture/index.dart';
 
 class Attachments extends StatelessWidget {
   const Attachments({Key? key, required this.email, this.onTap})
