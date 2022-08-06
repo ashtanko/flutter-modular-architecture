@@ -10,7 +10,7 @@ on:
 
 jobs:
   test-app:
-    name: App
+    name: App module job
 
     runs-on: ubuntu-latest
 
@@ -81,3 +81,62 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          flags: app
+
+  test-core:
+    name: Core module job
+
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: core
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.x'
+          channel: stable
+
+      - name: Flutter version
+        run: flutter --version
+
+      - name: Cache pub dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ env.FLUTTER_HOME }}/.pub-cache
+          key: ${{ runner.os }}-bloc-pub--${{ hashFiles('**/pubspec.lock') }}
+          restore-keys: ${{ runner.os }}-bloc-pub-
+
+      - name: Download pub dependencies
+        run: flutter pub get
+
+      - name: Run analyzer
+        run: flutter analyze
+
+      - name: Run tests
+        run: |
+          flutter test --coverage
+
+      - name: Install lcov
+        run: sudo apt-get install -y lcov
+
+      - name: Remove generated files from code coverage report
+        run: lcov --remove coverage/lcov.info 'lib/*/*.gen.dart' 'lib/generated/*.dart' 'lib/generated/*/*.dart' 'lib/di/*.dart' '**/lib/constants/' 'lib/constants/*.dart' -o coverage/lcov.info
+
+      - name: Check Code Coverage
+        uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
+        with:
+          path: coverage/lcov.info
+          min_coverage: 55
+          exclude: '**/*.g.dart **/*.gen.dart **/lib/di/ lib/generated/ **/lib/generated/ lib/di/*.dart **/lib/constants/ lib/constants/*.dart/'
+
+      - name: Upload coverage to codecov
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          flags: core
